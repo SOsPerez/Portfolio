@@ -1,0 +1,118 @@
+:root{
+    --MyPrimary-Black:#090A0B;
+    --MyPrimary-White:#DEE2E6;
+    --MyPrimary-Grey:#343a40;
+    --MyPrimary-Grey2:#ADB5BD;
+    --MyPrimary-Grey3:#CED4DA;
+    --MyPrimary-white2:#ADB5BD;   
+}
+
+body {
+    font-size: 18px;
+    background-color: var(--MyPrimary-White);
+    font-family: 'Oxygen', sans-serif;
+}
+
+/* NAVBAR */
+.navbar{
+    background-color: var(--MyPrimary-Black);
+}
+
+/*END NAVBAR*/
+
+
+/* HEADER */
+#call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: var(--MyPrimary-Black);
+    color: var(--MyPrimary-White);
+}
+
+h1, h2{
+  font-weight: bold;
+  text-align: center;
+}
+h3{
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+#profilePic{
+    border-radius: 50%;
+}
+
+#homeContainer, #aboutSecContainer, #projectsContainer{
+  /*background-color:rgb(116, 194, 38);*/
+  height: 675px;
+  margin-top: 15px;
+}
+
+#homeRow, #aboutRow, #itemRow, #itemContainer{
+  /*background-color: red;*/
+  height: 600px;
+  padding-top: 10px;
+  /*border: 1px #000 solid;*/
+  overflow: auto;
+}
+
+#border{
+  border: 1px #000 solid;
+  text-align: center;
+}
+#colorItem{
+  background-color: coral;
+}
+.fas, .fab{
+  margin-left: 17px;
+  margin-right: 17px;
+  color: var(--MyPrimary-Black);
+}
+a > i.fab, a > i.fas{
+  color: var(--MyPrimary-White);
+}
+a:hover{
+  text-decoration: none;
+  color:var(--MyPrimary-Grey2);
+}
+i:hover{
+  color: var(--MyPrimary-Grey3);
+}
+
+/* END HEADER*/
+
+/*ABOUT ME*/
+.jumbotron {
+  box-shadow: 0 0 50px var(--MyPrimary-Grey);
+  border: 2px solid var(--MyPrimary-Grey);
+  background-color: var(--MyPrimary-Black);
+  color: var(--MyPrimary-White);
+}
+
+/*END ABOUT ME*/
+
+/*PROJECTS*/
+#projectsContainer, #carouselProjects{
+  min-height: 80vh;
+}
+/*END PROJECTS*/
+
+/* FOOTER */
+.panel-footer {
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: var(--MyPrimary-Black);
+    border-top: 0;
+    color: var(--MyPrimary-White);
+  }
+.panel-footer div.row {
+    margin-bottom: 35px;
+    color: var(--MyPrimary-White);
+  }
+hr{
+    border-color: var(--MyPrimary-White);
+  }
+/*END FOOTER*/

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/86424bc8e7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <title>Sergio P&eacute;rez</title>
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="header-nav">
+           <!--<div class="row justify-content-end">
+      <a class="navbar-brand" href="#">Sergio P&eacute;rez</a>
+                   <div class="col-auto" id="darkMode">
+                    <i class="fas fa-lightbulb fa-2x"></i>
+                </div>
+            </div>-->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+            <a class="nav-link active" aria-current="page" href="#homeContainer">Home</a>
+            <a class="nav-link" href="#aboutSecContainer">About me</a>
+            <a class="nav-link" href="#projectsContainer">Projects</a>
+            <a class="nav-link" href="#contactSec" type="button" data-toggle="modal" data-target="#contact">Contact</a>
+            </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <!-- MODAL -->
+    <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contact" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Drop me a line for work inquiries or just say hi at
+               <b id="myEmail" type="button" onclick="CopyToClipboard('myEmail')" data-toggle="tooltip" data-placement="right" title="Copy to clipboard">s.oswaldo.p.r@gmail.com</b>
+            </p> 
+            <p>Or feel free to connect with me on <a href="https://www.linkedin.com/in/sergio-oswaldo-pérez-ramos-636597104/">LinkedIn</a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END MODAL-->
+    <!--END NAVBAR-->
+    <!--HEADER-->
+    <header  id="panel-header" >
+      <div class="container-fluid text-center" id="homeContainer">
+        <div class = "row align-items-center justify-content-between" id="homeRow">
+          <div class="col-md-2 align-self-start order-md-12 d-none d-md-block border colorItem" id="darkMode">
+            <!-- <i class="fas fa-lightbulb fa-2x"></i> -->
+          </div> 
+          <!--<div class="col-md-6 border colorItem">-->
+          <div class="col-md-5 border colorItem">
+              <h1>Hi, I'm Sergio P&eacute;rez</h1>
+            <p>Biomedical Engineer & Salesforce Developer</p>
+          </div> 
+          <div class="col-md-5 d-none d-md-block border colorItem">
+          <!--<div class="col-md-6 d-none d-md-block border colorItem">-->
+              <img  width="300" height="300" src="images/myPhoto.jpg" alt="Profile picture" class="img-fluid" id="profilePic">   
+          </div>
+          <div class="col-md-5 d-md-none" id="contactSmallDev">
+            <a class="fas fa-envelope fa-4x" href="mailto:s.oswaldo.p.r@gmail.com"></a>
+            <a class="fab fa-linkedin fa-4x" href="https://www.linkedin.com/in/sergio-oswaldo-pérez-ramos-636597104/"></a>
+            <a class="fab fa-telegram fa-4x"href="https://telegram.me/SosPerez"></a>
+          </div>
+          <div class="col-md-12 d-md-none" id="call-btn">
+            <a class="btn" href="tel:5591937542">
+            <span class=""></span>
+            CONTACT ME 
+            </a>
+          </div>    
+        </div>
+      </div>
+    </header>
+    <!--END HEADER-->
+    <!--ABOUT ME-->
+    <section class="container" id="aboutSecContainer">
+      <div class="row jumbotron" id="aboutRow">
+        <div class="col-md-12 colorItem ">
+          <h2>About me</h2>
+          <div class="row align-items-center">
+            <div class="col-md-6 text-rigth colorItem">
+              <p>Engineer and Salesforce Developer based in Mexico City. Passionate about technological 
+                innovation and waterpolo player. Experience developing requirements for enterprise-size companies. 
+                Dedicated to developing effective and scalable solutions.<br>
+                <ul>
+                  <li>Bachelor’s Degree in Biomedical Engineering, Universidad Autónoma Metropolitana, México.</li>
+                  <li>HTML, CSS, and Javascript for Web Developers, Johns Hopkins University (MOOC)</li>
+                  <li>Single Page Web application with Angular JS, Johns Hopkins University (MOOC)</li>
+                  <li>Version Control with Git, Atlassian (MOOC) </li>
+                </ul>
+              </p>
+            </div>
+            <div class="col-md-6 text-center colorItem">
+              <h3>Skills</h3>
+              <img src="images/matlab.png" alt="matlabImage">
+              <img src="images/cplus.png" alt="cplusmatlabImage">
+              <img src="images/c.png" alt="cImage">
+              <br>
+              <img src="images/python.png" alt="pythonImage">
+              <img src="images/html.png" alt="htmlbImage">
+              <img src="images/css.png" alt="cssImage">
+              <img src="images/js.png" alt="jsImage">
+              <img src="images/bootstrap.png" alt="bImage">
+              <img src="images/salesforce.png" alt="sfImage">
+              <img src="images/git.png" alt="gitImage">
+              <img src="images/OsiriX.png" alt="osiriximage">
+              <img src="images/vs.png" alt="vsImage">
+            </div>
+            <div class="col-md-4  colorItem">
+              <button type="button" class="btn btn-outline-light btn-lg">Resume</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--END ABOUT ME-->
+    <!--PROJECTS-->
+    <section class="text-center" id="projectsContainer">
+      <h2>Projects</h2>
+      <div  class="carousel slide carousel-fade" data-ride="carousel" data-interval="50000"  id="carouselProjects" >
+        <ol class="carousel-indicators">
+          <li data-target="#carouselProjects" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselProjects" data-slide-to="1"></li>
+          <li data-target="#carouselProjects" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container text-center" id="itemContainer" style=" height:650px">
+              <div class="row align-items-center justify-content-center" id="itemRow">
+                <div class="col-md-5  colorItem">
+                  <img  width="500" height="500" src="images/sigSSVEP.jpg" alt="SSVEP image" class="img-fluid" id="SSEVP"> 
+                  <!--<img  width="500" height="500" src="images/gmobilab.jpeg" alt="gMobilab image" class="img-fluid" id="gmobilab">-->
+                  <img  width="500" height="500" src="images/kitGmobi.jpeg" alt="kitGmobi image" class="img-fluid" id="kitGmobi"> 
+                </div>
+                <div class="col-md-5 border colorItem">
+                  <h3>Brain-Computer Interface (BCI)</h3>
+                  <p>This project aimed to create a portable BCI based on a steady-state visual 
+                    evoked potentials paradigm using a gtec&reg;; Amplifier and a single board computer. 
+                    The device was developed to provide patients with severe paralysis a way to control a 
+                    wheelchair using their electrical brain activity (EEG). 
+                    The brain's occipital lobe has a natural response to repeated visual stimuli proportional
+                    to the stimuli frequency. Different stimuli frequencies lead to different commands 
+                    to the wheelchair. A customized algorithm needs to be designed to identify each patient 
+                    brain's response.
+                    <br>
+                    The project consisted of 3 stages:
+                    <ul>
+                      <li>Development and implementation of the stimulation modulus</li>
+                      <li>Development of the acquisition and processing framework, based on gtec Amplifier APIs</li>
+                      <li>Design and implementation of an EEG acquisition, visualization and processing software for the BCI training phase.</li>
+                    </ul>
+                    Developed using C++ and Matlab.
+                    Duration: 12 months.
+                  </p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+                  </svg>
+                  <span>Laboratorio de Investigación en Neuroimagenología, UAM.</span>
+                </div> 
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container text-center" id="itemContainer" style=" height:650px">
+              <div class="row align-items-center justify-content-center" id="itemRow">
+                <div class="col-md-5  colorItem">
+                  <img  width="400" height="400" src="images/ecg.png" alt="ecg picture" class="img-fluid" id="ecgPic"> 
+                </div>
+                <div class="col-md-5 border colorItem">
+                  <h3>Heart rate measurement app</h3>
+                  <p>Development and implementation of the user interface and algorithm for online 
+                    processing of the electrical heart activity (EKG), acquired by a wireless wearable
+                    amplifier. The heart rate is estimated by detecting the R-R Interval and computing 
+                    its reciprocal. The device was tested in healthy subjects with no Premature heartbeat 
+                    disorder, and the estimated rate has 95% accuracy compared to measurements done with 
+                    certified medical devices.
+                    Developed using a Texas Instruments microcontroller and Android app development.
+                    Duration: 6 months.
+                  </p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+                  </svg>
+                  <span>Centro Nacional de Investigación en Imagenología e Instrumentación Médica, UAM</span>
+                </div> 
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container text-center" id="itemContainer" style=" height:650px">
+              <div class="row align-items-center justify-content-center" id="itemRow">
+                <div class="col-md-5  colorItem">
+                  <img  width="600" height="600" src="images/mamo.jpeg" alt="Mamography image" class="img-fluid" id="mamoPic"> 
+                </div>
+                <div class="col-md-5 border colorItem">
+                  <h3>Mastography viewer software</h3>
+                  <p>Diagnostical Imaging Department, National Cancer Institute.
+                    User interface and image processing algorithm to detect the early stages of breast
+                    cancer by locating characteristic masses or microcalcifications in mastography images. 
+                    The software's main features are automated and manual segmentation, volume estimation, 3d reconstruction,
+                    simultaneous visualization of the three different planes: Axial, Coronal, & Sagittal.
+                    Developed using Matlab and Matlab GUI. Duration: 6 months
+                  </p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+                  </svg>
+                  <span>Instituto Nacional de Cancerología</span>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselProjects" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselProjects" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+    <!--END PROJECTS-->
+    <footer class="panel-footer">
+        <div class="container">
+            <div class="row text-center" id="footerRow">
+              <a class="col-sm-4" id="linkedin" href="https://www.linkedin.com/in/sergio-oswaldo-pérez-ramos-636597104/">
+                <i class="fab fa-linkedin fa-3x" ></i>
+                <hr class="d-block d-sm-none">
+              </a>
+              <a class="col-sm-4" id="github" href="https://github.com/SOsPerez">
+                <i class="fab fa-github fa-3x"></i>
+                <hr class="d-block d-sm-none">
+              </a>
+              <a class="col-sm-4" id="salesforce" href="https://trailblazer.me/id/operez23">
+                <i class="fab fa-salesforce fa-3x"></i>
+                <hr class="d-block d-sm-none">
+              </a>
+            </div>
+            <div class="text-center">
+                Reach me at
+                <a href="mailto:s.oswaldo.p.r@gmail.com">s.oswaldo.p.r@gmail.com</a>
+            </div>
+            <div class="text-center">&copy; Copyright Sergio Oswaldo Pérez Ramos 2021</div>
+        </div>
+    </footer>
+  <!--Javascrit-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="./js/popper.min.js"></script> 
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+
+
+  
+      
+  
+      
