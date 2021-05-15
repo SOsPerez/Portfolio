@@ -1,10 +1,13 @@
 :root{
-    --MyPrimary-Black:#090A0B;
-    --MyPrimary-White:#DEE2E6;
-    --MyPrimary-Grey:#343a40;
-    --MyPrimary-Grey2:#ADB5BD;
-    --MyPrimary-Grey3:#CED4DA;
-    --MyPrimary-white2:#ADB5BD;   
+  --MyPrimary-White:#F8F9FA;
+  --MyPrimary-Gray:#6C757D;
+  --MyPrimary-Gunmetal:#343A40;
+  --MyPrimary-Black:#090A0B;
+}
+.darkMode{
+  --MyPrimary-Black:#F8F9FA;
+  --MyPrimary-Gunmetal:white;
+  --MyPrimary-White:#090A0B;
 }
 
 body {
@@ -15,13 +18,35 @@ body {
 
 /* NAVBAR */
 .navbar{
-    background-color: var(--MyPrimary-Black);
+background-color: var(--MyPrimary-White);
 }
-
+.nav-link, .navbar-brand, .navbar-toggler .fas{
+  color: var(--MyPrimary-Black);
+}
+.nav-link:hover, .navbar-brand:hover, .navbar-toggler .fas:hover{
+  color:var(--MyPrimary-Gray);
+}
+#mode{
+  cursor: pointer;
+  width: 30px;
+}
 /*END NAVBAR*/
 
-
 /* HEADER */
+h1, h2{
+  font-weight: bold;
+  text-align: center;
+}
+h1{
+  color:var(--MyPrimary-Gray);
+}
+h3{
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+h1 span, #homeContainer p{
+  color:var(--MyPrimary-Black);
+}
 #call-btn > a {
     font-size: 1.5em;
     display: block;
@@ -31,19 +56,20 @@ body {
     background-color: var(--MyPrimary-Black);
     color: var(--MyPrimary-White);
 }
-
-h1, h2{
-  font-weight: bold;
-  text-align: center;
-}
-h3{
-  padding-top: 10px;
-  margin-bottom: 10px;
-}
+#call-btn > a:hover{
+  box-shadow: 0 0 30px var(--MyPrimary-Gunmetal);
+  border: 2px solid var(--MyPrimary-Gunmetal);}
 #profilePic{
     border-radius: 50%;
 }
-
+div .fas, div .fab{
+  margin-left: 17px;
+  margin-right: 17px;
+  color: var(--MyPrimary-Black);
+}
+div .fas:hover,div .fab:hover{
+  color: var(--MyPrimary-Grey);
+}
 #homeContainer, #aboutSecContainer, #projectsContainer{
   /*background-color:rgb(116, 194, 38);*/
   height: 675px;
@@ -58,44 +84,29 @@ h3{
   overflow: auto;
 }
 
-#border{
+/* #border{
   border: 1px #000 solid;
   text-align: center;
 }
 #colorItem{
   background-color: coral;
-}
-.fas, .fab{
-  margin-left: 17px;
-  margin-right: 17px;
-  color: var(--MyPrimary-Black);
-}
-a > i.fab, a > i.fas{
-  color: var(--MyPrimary-White);
-}
-a:hover{
-  text-decoration: none;
-  color:var(--MyPrimary-Grey2);
-}
-i:hover{
-  color: var(--MyPrimary-Grey3);
-}
-
+} */
 /* END HEADER*/
 
 /*ABOUT ME*/
 .jumbotron {
-  box-shadow: 0 0 50px var(--MyPrimary-Grey);
-  border: 2px solid var(--MyPrimary-Grey);
+  box-shadow: 0 0 50px var(--MyPrimary-Gunmetal);
+  border: 2px solid var(--MyPrimary-Gunmetal);
   background-color: var(--MyPrimary-Black);
   color: var(--MyPrimary-White);
 }
-
 /*END ABOUT ME*/
 
 /*PROJECTS*/
+
 #projectsContainer, #carouselProjects{
   min-height: 80vh;
+  color: var(--MyPrimary-Black);
 }
 /*END PROJECTS*/
 
@@ -112,6 +123,12 @@ i:hover{
     margin-bottom: 35px;
     color: var(--MyPrimary-White);
   }
+a .fab{
+  color: var(--MyPrimary-White);
+}
+a .fab:hover{
+  color: var(--MyPrimary-Gray);
+}
 hr{
     border-color: var(--MyPrimary-White);
   }

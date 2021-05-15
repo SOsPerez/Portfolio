@@ -13,24 +13,51 @@
 </head>
 <body>
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="header-nav">
-           <!--<div class="row justify-content-end">
-      <a class="navbar-brand" href="#">Sergio P&eacute;rez</a>
-                   <div class="col-auto" id="darkMode">
-                    <i class="fas fa-lightbulb fa-2x"></i>
-                </div>
-            </div>-->
+    <!-- <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="header-nav">
+            <div>
+              <a class="navbar-brand" href="#homeContainer">Sergio P&eacute;rez</a>
+            </div>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
-            <a class="nav-link active" aria-current="page" href="#homeContainer">Home</a>
-            <a class="nav-link" href="#aboutSecContainer">About me</a>
-            <a class="nav-link" href="#projectsContainer">Projects</a>
-            <a class="nav-link" href="#contactSec" type="button" data-toggle="modal" data-target="#contact">Contact</a>
+              <a class="nav-link active" aria-current="page" href="#homeContainer">Home</a>
+              <a class="nav-link" href="#aboutSecContainer">About me</a>
+              <a class="nav-link" href="#projectsContainer">Projects</a>
+              <a class="nav-link" href="#contactSec" type="button" data-toggle="modal" data-target="#contact">Contact</a>
             </div>
         </div>
+        <div class="navbar-nav ml-auto">
+          <img src="images/moon.png" alt="Moon/Sun" id="mode">
+        </div> 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+    </nav> -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="navMode">
+      <a class="navbar-brand" href="#homeContainer">Sergio P&eacute;rez</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" 
+      aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars" role="button" aria-hidden="true"></i>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#homeContainer">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutSecContainer">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projectsContainer">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactSec" type="button" data-toggle="modal" data-target="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <img src="images/moon.png" alt="Moon/Sun" id="mode">
+          </li>
+        </ul>
+      </div>
     </nav>
     <!-- MODAL -->
     <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contact" aria-hidden="true">
@@ -44,7 +71,7 @@
           <div class="modal-body">
             <p>Drop me a line for work inquiries or just say hi at
                <b id="myEmail" type="button" onclick="CopyToClipboard('myEmail')" data-toggle="tooltip" data-placement="right" title="Copy to clipboard">s.oswaldo.p.r@gmail.com</b>
-            </p> 
+            </p>
             <p>Or feel free to connect with me on <a href="https://www.linkedin.com/in/sergio-oswaldo-pérez-ramos-636597104/">LinkedIn</a></p>
           </div>
           <div class="modal-footer">
@@ -59,17 +86,17 @@
     <header  id="panel-header" >
       <div class="container-fluid text-center" id="homeContainer">
         <div class = "row align-items-center justify-content-between" id="homeRow">
-          <div class="col-md-2 align-self-start order-md-12 d-none d-md-block border colorItem" id="darkMode">
-            <!-- <i class="fas fa-lightbulb fa-2x"></i> -->
-          </div> 
-          <!--<div class="col-md-6 border colorItem">-->
-          <div class="col-md-5 border colorItem">
-              <h1>Hi, I'm Sergio P&eacute;rez</h1>
+          <!-- <div class="col-md-2 align-self-start order-md-12 d-none d-md-block  colorItem">
+            <img src="images/moon.png" alt="Moon/Sun" id="mode">
+          </div>  -->
+          <div class="col-md-6">
+          <!-- <div class="col-md-5  colorItem"> -->
+            <h1>Hi, I'm <span>Sergio</span> P&eacute;rez</h1>
             <p>Biomedical Engineer & Salesforce Developer</p>
           </div> 
-          <div class="col-md-5 d-none d-md-block border colorItem">
-          <!--<div class="col-md-6 d-none d-md-block border colorItem">-->
-              <img  width="300" height="300" src="images/myPhoto.jpg" alt="Profile picture" class="img-fluid" id="profilePic">   
+          <!-- <div class="col-md-5 d-none d-md-block  colorItem"> -->
+          <div class="col-md-6 d-none d-md-block ">
+              <img  width="300" height="300" src="images/myPhoto.jpg" alt="Profile picture" class="img-fluid profilePic" id="profilePic">   
           </div>
           <div class="col-md-5 d-md-none" id="contactSmallDev">
             <a class="fas fa-envelope fa-4x" href="mailto:s.oswaldo.p.r@gmail.com"></a>
@@ -78,8 +105,7 @@
           </div>
           <div class="col-md-12 d-md-none" id="call-btn">
             <a class="btn" href="tel:5591937542">
-            <span class=""></span>
-            CONTACT ME 
+              <span>CONTACT ME </span>
             </a>
           </div>    
         </div>
@@ -146,7 +172,7 @@
                   <!--<img  width="500" height="500" src="images/gmobilab.jpeg" alt="gMobilab image" class="img-fluid" id="gmobilab">-->
                   <img  width="500" height="500" src="images/kitGmobi.jpeg" alt="kitGmobi image" class="img-fluid" id="kitGmobi"> 
                 </div>
-                <div class="col-md-5 border colorItem">
+                <div class="col-md-5  colorItem">
                   <h3>Brain-Computer Interface (BCI)</h3>
                   <p>This project aimed to create a portable BCI based on a steady-state visual 
                     evoked potentials paradigm using a gtec&reg;; Amplifier and a single board computer. 
@@ -180,7 +206,7 @@
                 <div class="col-md-5  colorItem">
                   <img  width="400" height="400" src="images/ecg.png" alt="ecg picture" class="img-fluid" id="ecgPic"> 
                 </div>
-                <div class="col-md-5 border colorItem">
+                <div class="col-md-5  colorItem">
                   <h3>Heart rate measurement app</h3>
                   <p>Development and implementation of the user interface and algorithm for online 
                     processing of the electrical heart activity (EKG), acquired by a wireless wearable
@@ -205,7 +231,7 @@
                 <div class="col-md-5  colorItem">
                   <img  width="600" height="600" src="images/mamo.jpeg" alt="Mamography image" class="img-fluid" id="mamoPic"> 
                 </div>
-                <div class="col-md-5 border colorItem">
+                <div class="col-md-5  colorItem">
                   <h3>Mastography viewer software</h3>
                   <p>Diagnostical Imaging Department, National Cancer Institute.
                     User interface and image processing algorithm to detect the early stages of breast
@@ -225,11 +251,11 @@
         </div>
         <a class="carousel-control-prev" href="#carouselProjects" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
+          <span class="sr-only" >Previous</span>
         </a>
         <a class="carousel-control-next" href="#carouselProjects" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
+          <span class="sr-only" >Next</span>
         </a>
       </div>
     </section>
@@ -261,6 +287,7 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="./js/popper.min.js"></script> 
   <script src="./js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   <script src="./js/script.js"></script>
 </body>
 
