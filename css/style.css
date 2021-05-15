@@ -30,6 +30,9 @@ background-color: var(--MyPrimary-White);
   cursor: pointer;
   width: 30px;
 }
+#myEmail{
+cursor: pointer;
+}
 /*END NAVBAR*/
 
 /* HEADER */
