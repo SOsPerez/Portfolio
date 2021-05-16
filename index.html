@@ -13,27 +13,8 @@
 </head>
 <body>
     <!--NAVBAR-->
-    <!-- <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="header-nav">
-            <div>
-              <a class="navbar-brand" href="#homeContainer">Sergio P&eacute;rez</a>
-            </div>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-auto">
-              <a class="nav-link active" aria-current="page" href="#homeContainer">Home</a>
-              <a class="nav-link" href="#aboutSecContainer">About me</a>
-              <a class="nav-link" href="#projectsContainer">Projects</a>
-              <a class="nav-link" href="#contactSec" type="button" data-toggle="modal" data-target="#contact">Contact</a>
-            </div>
-        </div>
-        <div class="navbar-nav ml-auto">
-          <img src="images/moon.png" alt="Moon/Sun" id="mode">
-        </div> 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </nav> -->
     <nav class="navbar navbar-expand-lg sticky-top" id="navMode">
-      <a class="navbar-brand" href="#homeContainer">Sergio P&eacute;rez</a>
+      <a class="navbar-brand" href="#homeContainer"><b>Sergio</b> P.</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" 
       aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars" role="button" aria-hidden="true"></i>
@@ -59,6 +40,8 @@
         </ul>
       </div>
     </nav>
+    <!--END NAVBAR-->
+
     <!-- MODAL -->
     <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contact" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
@@ -81,21 +64,30 @@
       </div>
     </div>
     <!--END MODAL-->
-    <!--END NAVBAR-->
+    
     <!--HEADER-->
     <header  id="panel-header" >
-      <div class="container-fluid text-center" id="homeContainer">
+      <div class="container-fluid text-center " id="homeContainer">
         <div class = "row align-items-center justify-content-between" id="homeRow">
-          <!-- <div class="col-md-2 align-self-start order-md-12 d-none d-md-block  colorItem">
+          <!-- <div class="col-md-2 align-self-start order-md-12 d-none d-md-block  ">
             <img src="images/moon.png" alt="Moon/Sun" id="mode">
           </div>  -->
           <div class="col-md-6">
-          <!-- <div class="col-md-5  colorItem"> -->
+          <!-- <div class="col-md-5  "> -->
             <h1>Hi, I'm <span>Sergio</span> P&eacute;rez</h1>
             <p>Biomedical Engineer & Salesforce Developer</p>
+            <div class="container ">
+              <p >I'm passionate about</p>
+              <ul>
+                <li>Technology</li>
+                <li>Motorcycling</li>
+                <li>Neurocience</li>
+                <li>Sports</li>
+              </ul>
+            </div>
           </div> 
-          <!-- <div class="col-md-5 d-none d-md-block  colorItem"> -->
-          <div class="col-md-6 d-none d-md-block ">
+          <!-- <div class="col-md-5 d-none d-md-block  "> -->
+          <div class="col-md-6 d-none d-md-block">
               <img  width="300" height="300" src="images/myPhoto.jpg" alt="Profile picture" class="img-fluid profilePic" id="profilePic">   
           </div>
           <div class="col-md-5 d-md-none" id="contactSmallDev">
@@ -115,10 +107,10 @@
     <!--ABOUT ME-->
     <section class="container" id="aboutSecContainer">
       <div class="row jumbotron" id="aboutRow">
-        <div class="col-md-12 colorItem ">
+        <div class="col-md-12  ">
           <h2>About me</h2>
           <div class="row align-items-center">
-            <div class="col-md-6 text-rigth colorItem">
+            <div class="col-md-6 text-rigth ">
               <p>Engineer and Salesforce Developer based in Mexico City. Passionate about technological 
                 innovation and waterpolo player. Experience developing requirements for enterprise-size companies. 
                 Dedicated to developing effective and scalable solutions.<br>
@@ -130,7 +122,7 @@
                 </ul>
               </p>
             </div>
-            <div class="col-md-6 text-center colorItem">
+            <div class="col-md-6 text-center ">
               <h3>Skills</h3>
               <img src="images/matlab.png" alt="matlabImage">
               <img src="images/cplus.png" alt="cplusmatlabImage">
@@ -146,8 +138,10 @@
               <img src="images/OsiriX.png" alt="osiriximage">
               <img src="images/vs.png" alt="vsImage">
             </div>
-            <div class="col-md-4  colorItem">
-              <button type="button" class="btn btn-outline-light btn-lg">Resume</button>
+            <div class="col-md-4 ">
+              <a href="files/cvTest.txt" download>
+                <button type="button" class="btn btn-lg" href >Resume</button>
+              </a>
             </div>
           </div>
         </div>
@@ -167,12 +161,12 @@
           <div class="carousel-item active">
             <div class="container text-center" id="itemContainer" style=" height:650px">
               <div class="row align-items-center justify-content-center" id="itemRow">
-                <div class="col-md-5  colorItem">
+                <div class="col-md-5">
                   <img  width="500" height="500" src="images/sigSSVEP.jpg" alt="SSVEP image" class="img-fluid" id="SSEVP"> 
                   <!--<img  width="500" height="500" src="images/gmobilab.jpeg" alt="gMobilab image" class="img-fluid" id="gmobilab">-->
                   <img  width="500" height="500" src="images/kitGmobi.jpeg" alt="kitGmobi image" class="img-fluid" id="kitGmobi"> 
                 </div>
-                <div class="col-md-5  colorItem">
+                <div class="col-md-5">
                   <h3>Brain-Computer Interface (BCI)</h3>
                   <p>This project aimed to create a portable BCI based on a steady-state visual 
                     evoked potentials paradigm using a gtec&reg;; Amplifier and a single board computer. 
@@ -203,10 +197,10 @@
           <div class="carousel-item">
             <div class="container text-center" id="itemContainer" style=" height:650px">
               <div class="row align-items-center justify-content-center" id="itemRow">
-                <div class="col-md-5  colorItem">
+                <div class="col-md-5  ">
                   <img  width="400" height="400" src="images/ecg.png" alt="ecg picture" class="img-fluid" id="ecgPic"> 
                 </div>
-                <div class="col-md-5  colorItem">
+                <div class="col-md-5  ">
                   <h3>Heart rate measurement app</h3>
                   <p>Development and implementation of the user interface and algorithm for online 
                     processing of the electrical heart activity (EKG), acquired by a wireless wearable
@@ -228,10 +222,10 @@
           <div class="carousel-item">
             <div class="container text-center" id="itemContainer" style=" height:650px">
               <div class="row align-items-center justify-content-center" id="itemRow">
-                <div class="col-md-5  colorItem">
+                <div class="col-md-5  ">
                   <img  width="600" height="600" src="images/mamo.jpeg" alt="Mamography image" class="img-fluid" id="mamoPic"> 
                 </div>
-                <div class="col-md-5  colorItem">
+                <div class="col-md-5  ">
                   <h3>Mastography viewer software</h3>
                   <p>Diagnostical Imaging Department, National Cancer Institute.
                     User interface and image processing algorithm to detect the early stages of breast

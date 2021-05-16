@@ -74,26 +74,93 @@ div .fas:hover,div .fab:hover{
   color: var(--MyPrimary-Grey);
 }
 #homeContainer, #aboutSecContainer, #projectsContainer{
-  /*background-color:rgb(116, 194, 38);*/
   height: 675px;
   margin-top: 15px;
 }
 
 #homeRow, #aboutRow, #itemRow, #itemContainer{
-  /*background-color: red;*/
   height: 600px;
   padding-top: 10px;
-  /*border: 1px #000 solid;*/
   overflow: auto;
 }
 
-/* #border{
-  border: 1px #000 solid;
+/* .border{
+  border: 1px red solid;
   text-align: center;
 }
-#colorItem{
+.colorItem{
   background-color: coral;
+  margin: 0;
+}
+.colorItem2{
+  background-color: red;
+}
+.colorItem3{
+  background-color: green;
 } */
+
+/* ANIMATION */
+#homeRow .container{
+  height: 22px;
+  width: 325px;
+  line-height: 22px;
+  display: flex;
+  overflow: hidden;
+}
+h1 + p{
+  margin-bottom: 8px;
+}
+#homeContainer ul{
+  list-style: none;
+  padding-left: 10px;
+  text-align: start;
+  animation: change 7s infinite;
+  margin: 0px;
+  color:var(--MyPrimary-Gray);
+  font-size: 17px;
+}
+#homeContainer .container p{
+  margin: 0px;
+}
+@keyframes change {
+  
+  /* Three items
+  0%{margin-top: 0;}
+  20%{margin-top: 0;}
+
+  25%{margin-top: -22px;}
+  50%{margin-top: -22px;}
+
+  55%{margin-top: -44px;}
+  80%{margin-top: -44px;}
+
+  85%{margin-top: -22px;}
+  95%{margin-top: -22px;}
+
+  100%{margin-top: 0;} */
+
+  0%{margin-top: 0;}
+  7%{margin-top: 0;}
+
+  11%{margin-top: -22px;}
+  25%{margin-top: -22px;}
+
+  29%{margin-top: -44px;}
+  43%{margin-top: -44px;}
+
+  47%{margin-top: -66px;}
+  61%{margin-top: -66px;}
+
+  65%{margin-top: -44px;}
+  79%{margin-top: -44px;}
+
+  83%{margin-top: -22px;}
+  95%{margin-top: -22px;}
+
+  100%{margin-top: 0;}
+}
+/* END ANIMATION */
+
 /* END HEADER*/
 
 /*ABOUT ME*/
@@ -102,6 +169,14 @@ div .fas:hover,div .fab:hover{
   border: 2px solid var(--MyPrimary-Gunmetal);
   background-color: var(--MyPrimary-Black);
   color: var(--MyPrimary-White);
+}
+.jumbotron div button{
+  color:var(--MyPrimary-White);
+  border-color:var(--MyPrimary-White);
+}
+.jumbotron div button:hover{
+  background-color: var(--MyPrimary-White);
+  color:var(--MyPrimary-Black);
 }
 /*END ABOUT ME*/
 
