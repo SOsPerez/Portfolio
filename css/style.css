@@ -3,6 +3,7 @@
   --MyPrimary-Gray:#6C757D;
   --MyPrimary-Gunmetal:#343A40;
   --MyPrimary-Black:#090A0B;
+  --MyPrimary-Crayola:#71571a;
 }
 .darkMode{
   --MyPrimary-Black:#F8F9FA;
@@ -74,11 +75,12 @@ div .fas:hover,div .fab:hover{
   color: var(--MyPrimary-Grey);
 }
 #homeContainer, #aboutSecContainer, #projectsContainer{
-  height: 675px;
-  margin-top: 15px;
+  /* height: 675px; */
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-#homeRow, #aboutRow, #itemRow, #itemContainer{
+#homeRow, #itemRow, #itemContainer{
   height: 600px;
   padding-top: 10px;
   overflow: auto;
@@ -124,7 +126,7 @@ h1 + p{
 }
 @keyframes change {
   
-  /* Three items
+  /*Three items*/
   0%{margin-top: 0;}
   20%{margin-top: 0;}
 
@@ -137,8 +139,9 @@ h1 + p{
   85%{margin-top: -22px;}
   95%{margin-top: -22px;}
 
-  100%{margin-top: 0;} */
+  100%{margin-top: 0;}
 
+  /* Four items
   0%{margin-top: 0;}
   7%{margin-top: 0;}
 
@@ -157,10 +160,9 @@ h1 + p{
   83%{margin-top: -22px;}
   95%{margin-top: -22px;}
 
-  100%{margin-top: 0;}
+  100%{margin-top: 0;} */
 }
 /* END ANIMATION */
-
 /* END HEADER*/
 
 /*ABOUT ME*/
@@ -181,12 +183,96 @@ h1 + p{
 /*END ABOUT ME*/
 
 /*PROJECTS*/
-
 #projectsContainer, #carouselProjects{
   min-height: 80vh;
   color: var(--MyPrimary-Black);
 }
 /*END PROJECTS*/
+
+/* EXPERIENCE */
+h5{
+  font-weight: lighter;
+}
+.blue-bg {
+  color: var(--MyPrimary-Black);
+  height: 100%;
+  padding-top: 60px;
+}
+.circle {
+  font-weight: bold;
+  padding: 15px 20px;
+  border-radius: 50%;
+  background-color: var(--MyPrimary-Crayola);
+  color: black;
+  max-height: 50px;
+  z-index: 2;
+}
+.how-it-works.row {
+  display: flex;
+}
+.how-it-works.row .col-2 {
+  display: inline-flex;
+  align-self: stretch;
+  align-items: center;
+  justify-content: center;
+}
+.how-it-works.row .col-2::after {
+  content: "";
+  position: absolute;
+  border-left: 3px solid var(--MyPrimary-Crayola);
+  z-index: 1;
+}
+.how-it-works.row .col-2.bottom::after {
+  height: 50%;
+  left: 50%;
+  top: 50%;
+}
+.how-it-works.row .col-2.full::after {
+  height: 100%;
+  left: calc(50% - 3px);
+}
+.how-it-works.row .col-2.top::after {
+  height: 50%;
+  left: 50%;
+  top: 0;
+}
+.timeline div {
+  padding: 0;
+  height: 40px;
+}
+.timeline hr {
+  border-top: 3px solid var(--MyPrimary-Crayola);
+  margin: 0;
+  top: 17px;
+  position: relative;
+}
+.timeline .col-2 {
+  display: flex;
+  overflow: hidden;
+}
+.timeline .corner {
+  border: 3px solid var(--MyPrimary-Crayola);
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+.timeline .top-right {
+  left: 50%;
+  top: -50%;
+}
+.timeline .left-bottom {
+  left: -50%;
+  top: calc(50% - 3px);
+}
+.timeline .top-left {
+  left: -50%;
+  top: -50%;
+}
+.timeline .right-bottom {
+  left: 50%;
+  top: calc(50% - 3px);
+}
+/* END EXPERIENCE */
 
 /* FOOTER */
 .panel-footer {
