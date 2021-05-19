@@ -78,6 +78,7 @@ div .fas:hover,div .fab:hover{
   /* height: 675px; */
   margin-top: 20px;
   margin-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 #homeRow, #itemRow, #itemContainer{
@@ -186,6 +187,7 @@ h1 + p{
 #projectsContainer, #carouselProjects{
   min-height: 80vh;
   color: var(--MyPrimary-Black);
+ 
 }
 /*END PROJECTS*/
 
@@ -196,7 +198,6 @@ h5{
 .blue-bg {
   color: var(--MyPrimary-Black);
   height: 100%;
-  padding-top: 60px;
 }
 .circle {
   font-weight: bold;
