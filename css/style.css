@@ -3,7 +3,7 @@
   --MyPrimary-Gray:#6C757D;
   --MyPrimary-Gunmetal:#343A40;
   --MyPrimary-Black:#090A0B;
-  --MyPrimary-Crayola:#71571a;
+  --MyPrimary-Crayola:#00e8e8;
 }
 .darkMode{
   --MyPrimary-Black:#F8F9FA;
@@ -47,6 +47,7 @@ h1{
 h3{
   padding-top: 10px;
   margin-bottom: 10px;
+  text-align: center;
 }
 h1 span, #homeContainer p{
   color:var(--MyPrimary-Black);
@@ -188,6 +189,18 @@ h1 + p{
   min-height: 80vh;
   color: var(--MyPrimary-Black);
  
+}
+.carousel-inner button{
+  color:var(--MyPrimary-Black);
+  border-color: var(--MyPrimary-Black);
+  background-color: var(--MyPrimary-White);
+}
+.carousel-inner button:hover{
+  color: var(--MyPrimary-White);
+  background-color: var(--MyPrimary-Black);
+}
+#bciDiag{
+  max-height: fit-contents;
 }
 /*END PROJECTS*/
 
