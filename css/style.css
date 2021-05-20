@@ -120,7 +120,7 @@ h1 + p{
   text-align: start;
   animation: change 7s infinite;
   margin: 0px;
-  color:var(--MyPrimary-Gray);
+  color:var(--MyPrimary-Crayola);
   font-size: 17px;
 }
 #homeContainer .container p{
